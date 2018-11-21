@@ -15,8 +15,6 @@ How to load your planets to simulator:
 You have to prepare a text file (.txt for example) and in it write objects you want to simulate for example:
 
 star1   1000    760 540     0   2.5   255 200 100     30
-star2   1000   1160 540     0  -2.5   255 200 100     30
-planet    42   1560 540     0  4.715  200 100  10     20
 
 each object is divided using new line (enter key) each object has to have a name
 what these numbers mean?
