@@ -9,9 +9,9 @@ struct Color {
 };
 
 
-class gravityObject{
+class GravityObject{
     public:
-        gravityObject(std::string sName, double sMass, Vector sPosition, Vector sSpeed, Color sColor, int sSize);
+        GravityObject(std::string sName, double sMass, Vector sPosition, Vector sSpeed, Color sColor, int sSize);
 
     	Vector position;
 		Vector speed;
@@ -24,6 +24,12 @@ class gravityObject{
 
 		std::string name;
 
+		//update speed and position of the object and also draw it
         void objectUpdate();
+
+		//calculate force to other object and the add to force vector
         void calculateForceToOtherObject(double otherMass, Vector otherPosition);
+
+		//resets object's force to zero
+		void resetForce();
 };
