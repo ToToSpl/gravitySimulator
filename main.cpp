@@ -5,7 +5,7 @@
 #include <sstream>
 #include <iostream>
 #include <vector>
-#include "GravityObject.h"
+#include "gravityObject.h"
 
 using namespace std;
 

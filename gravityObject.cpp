@@ -1,4 +1,4 @@
-#include "GravityObject.h"
+#include "gravityObject.h"
 #include <math.h>
 #include "allegro5/allegro.h"
 #include <allegro5/allegro_primitives.h>
