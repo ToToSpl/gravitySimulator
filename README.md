@@ -1,9 +1,10 @@
-<h1>Physics</h1>
+<h2>Physics</h2>
 
 <p>Gravity is a very weak force (gravity constant is very small), so masses has to be huge to generate force.
 Because of that if we would use si units we would have to deal with huge differences of magnitude (from 10^-11 up to 10^24)
 and obviously thats not good numbers for fast calculations.</p>
 <p>Thats why i will use these units:</p>
+
 * mass 1 unit is 10^24kg
 * distance 1 unit is 10^9m
 * force 1 unit is 10^24N (for easy diffision by mass)
@@ -27,13 +28,13 @@ and obviously thats not good numbers for fast calculations.</p>
 - sixth, seventh and eighth: color of a object (red green blue form 0 to 255)
 - ninth: size on a screen in pixels
 
-<h3>How to load your objects?</h3>
+<h2>How to load your objects?</h2>
 <p>when you launch program (in unix for example) you have to pass a text file as a standard input stream</p>
 <p>./main < name_of_your_text_file</p>
 <p>the file has to be in the same folder as the simulator otherwise you have to pass whole directory like in examples:</p>
 <p>./main < /examples/planets1.txt</p>
 
-<h4>how to compile?</h4>
+<h2>how to compile?</h2>
 <p>for g++ in unix:</p>
 <p>g++ -o main main.cpp GravityObject.cpp -lallegro -lallegro_main -lallegro_primitives</p>
 
