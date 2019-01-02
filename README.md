@@ -7,7 +7,7 @@ and obviously thats not good numbers for fast calculations.</p>
 
 * mass 1 unit is 10^24kg
 * distance 1 unit is 10^9m
-* force 1 unit is 10^24N (for easy diffision by mass)
+* force 1 unit is 10^24N (for easy division by mass)
 * because of that gravity constant is G = 6.67408
 
 * F=(m1*m2)/dist^2 * G * 10^5
@@ -30,12 +30,13 @@ and obviously thats not good numbers for fast calculations.</p>
 
 <h2>How to load your objects?</h2>
 <p>when you launch program (in unix for example) you have to pass a text file as a standard input stream</p>
-<p>./main < name_of_your_text_file</p>
+<p>./gravitySimulator < name_of_your_text_file</p>
 <p>the file has to be in the same folder as the simulator otherwise you have to pass whole directory like in examples:</p>
 <p>./main < /examples/planets1.txt</p>
 
 <h2>how to compile?</h2>
 <p>for g++ in unix:</p>
-<p>g++ -o main main.cpp GravityObject.cpp -lallegro -lallegro_main -lallegro_primitives</p>
+<p>g++ -o gravitySimulator main.cpp GravityObject.cpp -lallegro -lallegro_main -lallegro_primitives</p>
+<p>or you can use included makefile</p>
 
-<p>the exec will be ./main</p>
+<p>the exec will be ./gravitySimulator</p>
