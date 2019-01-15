@@ -38,7 +38,7 @@ void GravityObject::calculateForceToOtherObject(double otherMass, Vector otherPo
 	//calculate force according to newtonian equation G*m1*m2/r^2
 	double forceMag = (gravityConst * pow(10,5) * (otherMass * mass)) / distSquared;
 
-	//calculate heading (heading of the position vector is the same as force's)
+	//calculate heading (heading of the relative position vector is the same as force's)
 	double angleCos =  (otherPosition.x-position.x) / sqrt(distSquared);
 	double angleSin =  (otherPosition.y-position.y) / sqrt(distSquared);
 

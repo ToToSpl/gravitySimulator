@@ -30,12 +30,13 @@ void update(){
 		gravityObject[i].resetForce();
 
 		//adding force from every other object
+		//loop for every object in the array
 		for(int j = 0; j < gravityObject.size(); j++){
-			if(i != j) 
+			if(i != j)  //checking if the other object is not itself
 				gravityObject[i].calculateForceToOtherObject(
 					gravityObject[j].mass,
 					gravityObject[j].position
-				);
+				); //calculating the force
 		}
 	}
 
@@ -87,9 +88,6 @@ int main(int argc, char *argv[]){
 
 	bool running = true;
 
-	//read the planets data
-	getDataFromFile();
-
 	// Initialize allegro
 	if (!al_init()) {
 		fprintf(stderr, "Failed to initialize allegro.\n");
@@ -121,6 +119,9 @@ int main(int argc, char *argv[]){
 	al_register_event_source(event_queue, al_get_display_event_source(display));
 	al_register_event_source(event_queue, al_get_timer_event_source(timer));
 	
+	//read the planets data
+	getDataFromFile();
+
 	//load screen for the first time
 	update();
 
@@ -146,7 +147,6 @@ int main(int argc, char *argv[]){
 					running = false;
 					break;
 				default:
-					fprintf(stderr, "Unsupported event received: %d\n", ev.type);
 					break;
 			}
 		}
